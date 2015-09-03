@@ -1,0 +1,36 @@
+header
+{
+     width:100%;
+     color:black;
+     text-align:center;
+     border: 4px double black;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+nav
+{
+    width:100%;
+    border: 4px double black;
+}
+section
+{
+    border: 4px double black;
+    height: 800px;
+    width: 25%;
+    float: left;
+    text-align:center;
+}
+aside
+{
+    border: 4px double black;
+    height: 800px;
+    width: 73.70%;
+    float: right;
+}
+footer
+{
+    width: 100%;
+    text-align: center;
+    border: 4px double black;
+    float: bottom;
+}
