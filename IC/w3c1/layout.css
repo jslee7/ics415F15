@@ -1,0 +1,26 @@
+body
+{
+    background-image: url("wow.jpg")
+}
+header
+{
+    color:black;
+    text-align:center;
+}
+nav
+{
+    border: 1px solid black;
+}
+section
+{
+    border: 4px double black;
+}
+aside
+{
+    border: 4px double black;
+}
+footer
+{
+    text-align: center;
+    border: 4px double black;
+}
