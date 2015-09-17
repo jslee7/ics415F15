@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title></title>
+</head>
+<body>
+
+<header onmouseover="borderChange()" onmouseout="borderChangeBack()" id="headerID">
+    <h1>Bootstrap Exercise</h1>
+</header>
+<script>
+    function borderChange()
+    {
+        document.getElementById("headerID").style.border="4px double green";
+    }
+    function borderChangeBack()
+    {
+        document.getElementById("headerID").style.border="4px double red";
+    }
+</script>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="row">
+    <div>
+        <section class="col-md-4">
+            <h1>
+                some stuff
+            </h1>
+            <p>click anywhere to change the color of this part of the webpage</p>
+            <br>
+            <script>
+                window.onclick = changeColor;
+                function changeColor()
+                {
+                    document.getElementsByTagName("SECTION")
+                            [0].style.backgroundColor = "yellow";
+                }
+            </script>
+        </section>
+    </div>
+    <div class="panel">
+
+        <aside class="col-md-8">
+
+            <p id="name"></p>
+            <br>
+            <p id="address"></p>
+            <br>
+            <p id="phoneNumber"></p>
+
+            <script>
+                function processData()
+                {
+                    var nameVar;
+                    var addressVar;
+                    var phoneNumberVar;
+                    var origURL;
+                    var arraySep;
+
+                    origURL = location.search.substring(1);
+
+                    arraySep = origURL.split("&");
+
+                    nameVar = arraySep[0].split("=")[1];
+
+                    addressVar = arraySep[1].split("=")[1];
+
+                    phoneNumberVar = arraySep[2].split("=")[1];
+
+                    document.getElementById("name").innerHTML = nameVar;
+                    document.getElementById("address").innerHTML = addressVar;
+                    document.getElementById("phoneNumber").innerHTML = phoneNumberVar;
+                }
+                processData();
+            </script>
+
+
+        </aside>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
