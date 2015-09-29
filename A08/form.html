@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>
+
+<header onmouseover="borderChange()" onmouseout="borderChangeBack()" id="headerID">
+    <h1>Bootstrap Exercise</h1>
+</header>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div>
+        <section class="col-md-4">
+            <h1>
+                some stuff
+            </h1>
+            <button>FAQ 1 - Who am  I</button>
+            <p>click anywhere to change the color of this part of the webpage</p>
+            <br>
+            <script>
+                <!--$("section").html('<object data="http://google.com">');//-->
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $("p").toggle();
+                    })
+                })
+            </script>
+        </section>
+    </div>
+    <div class="panel">
+        <aside class="col-md-8">
+           <form name="myForm" action="process.html" method="get">
+               <div class="form-group">
+                   <label for="username">User name:</label>
+                   <input type="text" name="name" id="username">
+               </div>
+               <div class="form-group">
+                   <label for="address">Address: </label>
+                   <input type="text" name="address" id="address">
+               </div>
+               <div class="form-group">
+                   <label for="phone">Phone Number: </label>
+                   <input type="text" name="phone" id="phone">
+               </div>
+               <input type="submit" value="Submit">
+
+           </form>
+
+        </aside>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+</body>
+</html>
